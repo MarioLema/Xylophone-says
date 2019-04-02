@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>XYLOPHONE SAYS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Gruppo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
 
 </head>
@@ -14,8 +14,7 @@
 <body>
     <header>
         <h1>XYLOPHONE SAYS</h1>
-        <p>This is a simple memory game. There are 65 different faces to match so you can play again and again. You are
-            also against the clock, make sure you work fast.</p>
+        <p>Just like the usual Simon Says type of games but with a XYlophone instead</p>
 
     </header>
 
@@ -238,10 +237,23 @@
             <source src="sounds/232005__danmitch3ll__xylophone-g.wav" type="audio/wav">
             Your browser does not support the <code>audio</code> element.
         </audio>
+        <audio id="sound-key-7">
+            <source src="sounds/232009__danmitch3ll__xylophone-sweep.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element.
+        </audio>
+        <audio id="sound-key-8">
+            <source src="sounds/327737__distillerystudio__error-02.wav" type="audio/wav">
+            Your browser does not support the <code>audio</code> element.
+        </audio>
     </div>
     <div>
         <button class="handle-button" id="start-game">START GAME</button>
         <p id="reminder">PRESS START TO INITIATE THE GAME</p>
+    </div>
+
+    <div id="endgame">
+        <h1 id="endgame-message">YOU LOSE! START AGAIN</h1>
+        <button class="handle-button" id="accept-button">ACCEPT</button>
     </div>
 
     <script src="app.js"></script>

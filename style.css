@@ -1,16 +1,15 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  background-color: #ffcfdf;
-  background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	background-color: #edd812;
+	background-image: linear-gradient(0deg, #c3c1b3 0%, #766a65 74%);
   min-height: 100vh;
-
+  font-family: 'Sniglet', cursive;
+  color: white;
 }
 
 *,
@@ -26,7 +25,6 @@ header {
 }
 
 header h1 {
-  font-family: 'Gruppo', cursive;
   margin-bottom: 2rem;
   font-size: 4rem;
 }
@@ -39,4 +37,22 @@ header p {
 #xylophone-svg{
     height: 31rem;
     width: 60rem;
+}
+.handle-button {
+	padding: 1rem;
+}
+#endgame {
+	position: fixed;
+	background: #0000009c;
+	padding: 5rem;
+	border-radius: 5px;
+	height: 100vh;
+	width: 100vw;
+	top: 50%;
+	left: 50%;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transform: translate(-50%,-50%);
 }
